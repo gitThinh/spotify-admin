@@ -3,4 +3,17 @@
   min-height: 100vh;
 }
 
+.nav_options{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  text-align: left;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
 
+.nav_options:hover{
+  background-color: #e0f3ff;
+}

@@ -1,14 +1,16 @@
 import * as React from 'react'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
-import { MainPage } from '@/constants/page'
+import { MainPage, Page404, LoginPage } from '@/constants/page'
 
 
 const index: React.FunctionComponent = () => {
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/*" element={<MainPage/>}/>
+                <Route index element={<MainPage/>}/>
+                <Route path="/*" element={<Page404/>}/>
+                <Route path="/login" element={<LoginPage/>}/>
             </Routes>
         </BrowserRouter>
     )
